@@ -43,8 +43,10 @@ Usage of ./horse:
 
 ## Parameters
 
+
 You may pass certain command-line parameters to the program to control
 the password generation process and desired output.
+
 ---
 
     -w INTEGER

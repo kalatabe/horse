@@ -13,7 +13,7 @@ Head over to the Releases page and download the latest release binary for your p
 
 ## Building from source
 
-1. Install `go` for your platform/OS, then make sure it's in your `PATH`
+1. Install go >= 1.22 for your platform/OS, then make sure it's in your `PATH`
 2. Clone the project
 3. Run `go build`. The executable `horse` will be created in the project's root directory.
 

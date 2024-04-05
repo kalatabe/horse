@@ -4,7 +4,6 @@ import (
 	"crypto/rand"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
-	"horse/wordlist"
 	"log"
 	"math/big"
 	"strings"
@@ -30,7 +29,7 @@ func getWord(WordList *[]string, capitalize bool) string {
 
 func generate(minWords int, minLength int, separator string, capitalize bool) string {
 	var words []string
-	dictionary := &wordlist.FullDictionary
+	dictionary := &FullDictionary
 	for i := 1; i <= minWords; i++ {
 		words = append(words, getWord(dictionary, capitalize))
 	}

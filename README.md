@@ -1,23 +1,33 @@
-# Secure memorable password generation CLI
+# Secure memorable password generation program
 
 ## Overview
-CLI tool to easily and securely generate long, safe, easy-to-remember passwords.
 
-Inspired by [XKCD 936](https://xkcd.com/936/) and [John VDL's "Correct Horse Battery Staple"](https://bitbucket.org/jvdl/correcthorsebatterystaple)
+`horse` is a command-line tool to easily and securely generate long, safe, easy-to-remember passwords.
 
+Inspired by [XKCD 936](https://xkcd.com/936/)
+and [John VDL's "Correct Horse Battery Staple"](https://bitbucket.org/jvdl/correcthorsebatterystaple)
 
-## Installation
+## Download
+
 Head over to the Releases page and download the latest release binary for your platform.
+
+## Building from source
+
+1. Install `go` for your platform/OS, then make sure it's in your `PATH`
+2. Clone the project
+3. Run `go build`. The executable `horse` will be created in the project's root directory.
 
 ## Basic usage
 
-Simply invoke the binary:
+Simply run the program:
+
 ```bash
 $ ./horse 
 HighlySellersWiredDominant
 ```
 
 For quick help, pass the `--help` parameter:
+
 ```bash
 $ ./horse --help
 Usage of ./horse:
@@ -33,26 +43,28 @@ Usage of ./horse:
 
 ## Parameters
 
-You may pass a number of command-line parameters to the program to control 
-the password generation logic and desired output.
+You may pass certain command-line parameters to the program to control
+the password generation process and desired output.
 ---
 
     -w INTEGER
+
 Minimum number of words to include in generated password. Default `4`.
 
 ---
 
-    -l INTEGER
-Minimum total length, including separator if defined, for the resulting password. Default `20`
-
----
-
     -s STRING
-Separator to insert between individual words. Will be taken as-is. Default `-`
+
+Separator to insert between individual words. Will be taken as-is. Default is blank.
 
 ---
 
+    -l INTEGER
+
+Minimum total length of password, including separator if defined. Default `20`
+
+---
     -c
 
-Switch to tell `horse` whether to capitalize each word in the resulting password. Default `true`
+Capitalize each word in the resulting password. Default `true`
 

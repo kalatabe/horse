@@ -12,6 +12,6 @@ var capitalizeFlag = flag.Bool("c", true, "Capitalize first letter of each word"
 
 func main() {
 	flag.Parse()
-	res := generate(*minWordsFlag, *minLengthFlag, *separatorFlag, *capitalizeFlag)
-	fmt.Println(res)
+	password := generate(*minWordsFlag, *minLengthFlag, *separatorFlag, *capitalizeFlag)
+	fmt.Println(password)
 }

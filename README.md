@@ -68,5 +68,5 @@ Minimum total length of password, including separator if defined. Default `20`
 ---
     -c
 
-Capitalize each word in the resulting password. Default `true`
+If set, capitalize each word in the resulting password.
 

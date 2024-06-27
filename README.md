@@ -31,7 +31,7 @@ For quick help, pass the `--help` parameter:
 ```bash
 $ ./horse --help
 Usage of ./horse:
-  -c	Capitalize first letter of each word (default true)
+  -c	Capitalize first letter of each word
   -l int
     	Minimum password length (default 20)
   -s string

@@ -1,5 +1,5 @@
 # Secure memorable password generation program
-
+[![Latest Release](https://github.com/kalatabe/horse/actions/workflows/release.yaml/badge.svg)](https://github.com/kalatabe/horse/actions/workflows/release.yaml)
 ## Overview
 
 `horse` is a command-line tool to easily and securely generate long, safe, easy-to-remember passwords.

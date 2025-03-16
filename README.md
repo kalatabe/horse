@@ -9,7 +9,7 @@ and [John VDL's "Correct Horse Battery Staple"](https://bitbucket.org/jvdl/corre
 
 ## Download
 
-Head over to the Releases page and download the latest release binary for your platform.
+Head over to the [Releases](https://github.com/kalatabe/horse/releases) page and download the latest release binary for your platform.
 
 ## Building from source
 

@@ -23,7 +23,7 @@ Simply run the program:
 
 ```bash
 $ ./horse 
-HighlySellersWiredDominant
+extensionridingvacationsapproaches
 ```
 
 For quick help, pass the `--help` parameter:

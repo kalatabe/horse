@@ -70,3 +70,8 @@ Minimum total length of password, including separator if defined. Default `20`
 
 If set, capitalize each word in the resulting password.
 
+---
+    -f STRING
+
+Path to a custom wordlist file. Each line in the file should contain a single word.
+If not specified, the default wordlist is used. If specified but empty, or if the file contains only blank lines, the program exits with an error. May be specified multiple times, in which case all valid wordlists are concatenated and the sum total of words is used for password generation.

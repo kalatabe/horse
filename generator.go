@@ -40,7 +40,9 @@ func readWordlist(filepath string) ([]string, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to open wordlist file: %v", err)
 	}
-	defer file.Close()
+	defer func(file *os.File) {
+		_ = file.Close()
+	}(file)
 
 	var words []string
 	scanner := bufio.NewScanner(file)
